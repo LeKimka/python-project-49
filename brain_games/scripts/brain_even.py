@@ -6,9 +6,9 @@ def is_even(number):
 
 def main():
     print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
+    name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
-    print("Answer 'yes', if the number is even, otherwise answer 'no'")
+    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
 
     correct_answer = 0
 
@@ -26,7 +26,7 @@ def main():
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {name}!")
             return
-print(f'Congratulations, {name}!')
+print(f"Congratulations, {name}!")
 
 if __name__ == '__main__':
     main()
