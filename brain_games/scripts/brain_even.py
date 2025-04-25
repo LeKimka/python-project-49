@@ -1,24 +1,34 @@
 import random
+import prompt
 
 def is_even(number):
     return number % 2 == 0
 
-def play_game():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def main():
+    print("Welcome to the Brain Games!")
+    name = prompt.string("May I have your name? ")
+    print(f"Hello, {name}!")
+    print('Answer \"yes\" if the number is even, otherwise answer \"no\".')
 
-    for _ in range(3): 
-        number = random.randint(1, 100)
-        correct_answer = 'yes' if is_even(number) else 'no'
+    correct_answers = 0
 
+    while correct_answers < 3:
+        number = random.randint(1, 1000)
         print(f"Question: {number}")
-        user_answer = input('Your answer: ').strip().lower()
+        answer = input("Your answer: ").strip().lower()
 
-        if user_answer != correct_answer:
-            return False, correct_answer
+        correct_answer_str = "yes" if is_even(number) else "no"
 
-print(f"Congratulations, {name}!")
+        if answer == correct_answer_str:
+            print("Correct!")
+            correct_answers += 1
+        else:
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer_str}'.")
+            print(f"Let's try again, {name}!")
+            return
 
-return True, None
+    print(f"Congratulations, {name}!")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
