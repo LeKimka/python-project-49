@@ -22,3 +22,5 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=microsoft_kiota&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=microsoft_kiota)
 
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=microsoft_kiota&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=microsoft_kiota)
+
+[![asciicast](https://asciinema.org/a/NY7vefEElc2Q8oH5dr3s7EH4b.svg)](https://asciinema.org/a/NY7vefEElc2Q8oH5dr3s7EH4b)
