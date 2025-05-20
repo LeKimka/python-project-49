@@ -24,3 +24,5 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=microsoft_kiota&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=microsoft_kiota)
 
 [![asciicast](https://asciinema.org/a/NY7vefEElc2Q8oH5dr3s7EH4b.svg)](https://asciinema.org/a/NY7vefEElc2Q8oH5dr3s7EH4b)
+
+[![asciicast](https://asciinema.org/a/xX0rXoOxc3gnuk5Gi9p27NjNF.svg)](https://asciinema.org/a/xX0rXoOxc3gnuk5Gi9p27NjNF)
