@@ -1,6 +1,5 @@
-from brain_games.scripts.utils import (
-    welcome_user, ask_question, compare_answer, ROUNDS
-)
+from brain_games.scripts.utils import ROUNDS, ask_question, compare_answer, welcome_user
+
 
 def start_game(game_logic, game_rule, game_name):
     name = welcome_user()
