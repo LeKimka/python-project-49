@@ -1,39 +1,24 @@
-import random
+from random import choice, randint
+from brain_games.scripts.engine import start_game
 
-def generate_expression():
-    num1 = random.randint(1, 100)
-    num2 = random.randint(1, 100)
-    operation = random.choice(['+', '-', '*'])
+def generate_expression(num1, num2, operation):
+    if operation == '+':
+        return num1 + num2
+    elif operation == "-":
+        return num1 - num2
+    elif operation == "*":
+        return num1 * num2
+    else:
+        raise ValueError(f'Unsupported operation: {operation}')
+
+def question_and_answer():
+    num1 = randint(1, 100)
+    num2 = randint(1, 100)
+    operation = choice(['+', '-', '*'])
     expression = f"{num1} {operation} {num2}"
-    return expression
-
-def calculate_answer(expression):
-    return eval(expression) 
+    correct_answer = str(generate_expression(num1, num2, operation))
+    return expression, correct_answer
 
 def main():
-    print("Welcome to the Brain Games!")
-    name = input("May I have your name? ")
-    print(f"Hello, {name}!")
-    print('What is the result of the expression?')
-
-    score = 0
-    rounds = 3
-
-    for _ in range(rounds):
-        expression = generate_expression() 
-        print(f"Question: {expression}")
-        user_answer = input('Your answer: ') 
-        correct_answer = calculate_answer(expression)
-
-        if str(user_answer) != str(correct_answer):
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {name}!")
-            return  
-        
-        print("Correct!")
-        score += 1
-
-    print(f"Congratulations, {name}!")
-
-if __name__ == "__main__":
-    main()
+    game_rule = 'What is the result of the expression?'
+    start_game(question_and_answer, game_rule, "Calculate Game")

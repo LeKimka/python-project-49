@@ -1,16 +1,24 @@
-class Game:
-    def start(self):
-        pass
+from brain_games.scripts.utils import (
+    welcome_user, ask_question, compare_answer, ROUNDS
+)
 
-class GameManager:
-    def __init__(self):
-        self.games = {}
-    
-    def register_game(self, game_name, game_class):
-        self.games[game_name] = game_class()
+def start_game(game_logic, game_rule, game_name):
+    name = welcome_user()
+    print(game_rule)
+    round_counter = 0
 
-    def start_game(self, game_name):
-        if game_name in self.games:
-            self.games[game_name].start()
+    while round_counter < ROUNDS:
+        question, correct_answer = game_logic()
+        answer = ask_question(f'Question: {question}')
+        right_answer = compare_answer(answer=answer, result=correct_answer)
+
+        if right_answer:
+            print('Correct!')
+            round_counter += 1
         else:
-            print(f"Game {game_name} is not registered.")
+            print(f"'{answer}' is wrong answer ;(. "
+            f"Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {name}!")
+            return
+
+    print(f"Congratulations, {name}!")
