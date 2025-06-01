@@ -24,11 +24,7 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=microsoft_kiota&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=microsoft_kiota)
 
 [![asciicast](https://asciinema.org/a/xX0rXoOxc3gnuk5Gi9p27NjNF.svg)](https://asciinema.org/a/xX0rXoOxc3gnuk5Gi9p27NjNF)
-
 [![asciicast](https://asciinema.org/a/2sslxzFrGrI9Aps1oPxKIJaRn.svg)](https://asciinema.org/a/2sslxzFrGrI9Aps1oPxKIJaRn)
-
 [![asciicast](https://asciinema.org/a/W6z7qB3qS2zBbBFgONLLv90ff.svg)](https://asciinema.org/a/W6z7qB3qS2zBbBFgONLLv90ff)
-
 [![asciicast](https://asciinema.org/a/tqJh9XmrkbvxSahYK0ruON4wJ.svg)](https://asciinema.org/a/tqJh9XmrkbvxSahYK0ruON4wJ)
-
 [![asciicast](https://asciinema.org/a/IfWtUEnK9XPwB6UdgsRF284WG.svg)](https://asciinema.org/a/IfWtUEnK9XPwB6UdgsRF284WG)
