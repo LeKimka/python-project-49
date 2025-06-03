@@ -10,8 +10,8 @@ def generate_expression(num1, num2):
 
 
 def question_and_answer():
-    num1 = randint(1, 100)
-    num2 = randint(1, 100)
+    num1 = randint(1, 100)  # NOSONAR
+    num2 = randint(1, 100)  # NOSONAR
     expression = f"{num1} {num2}"
     correct_answer = str(generate_expression(num1, num2))
     return expression, correct_answer

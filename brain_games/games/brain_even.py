@@ -8,7 +8,7 @@ def is_even(number):
 
 
 def question_and_answer():
-    number = randint(1, 1000)
+    number = randint(1, 1000)  # NOSONAR
     question = str(number)
     correct_answer = "yes" if is_even(number) else "no"
     return question, correct_answer
