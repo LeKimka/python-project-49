@@ -15,9 +15,9 @@ def generate_expression(num1, num2, operation):
 
 
 def question_and_answer():
-    num1 = randint(1, 100)
-    num2 = randint(1, 100)
-    operation = choice(['+', '-', '*'])
+    num1 = randint(1, 100)  # NOSONAR
+    num2 = randint(1, 100)  # NOSONAR
+    operation = choice(['+', '-', '*'])  # NOSONAR
     expression = f"{num1} {operation} {num2}"
     correct_answer = str(generate_expression(num1, num2, operation))
     return expression, correct_answer
