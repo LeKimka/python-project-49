@@ -8,12 +8,12 @@ def generate_expression(start, step, index):
 
 
 def question_and_answer():
-    index = randint(5, 10) # SONAR
-    start = randint(1, 20) # SONAR
-    step = randint(1, 10) # SONAR
+    index = randint(5, 10)  # SONAR
+    start = randint(1, 20)  # SONAR
+    step = randint(1, 10)  # SONAR
     expression = generate_expression(start, step, index)
 
-    hidden_index = randint(0, index - 1) # SONAR
+    hidden_index = randint(0, index - 1)  # SONAR
     correct_answer = str(expression[hidden_index])
     expression_with_hidden = expression.copy()
     expression_with_hidden[hidden_index] = '..'
